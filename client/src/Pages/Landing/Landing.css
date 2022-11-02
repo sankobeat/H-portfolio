@@ -1,0 +1,141 @@
+main {
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  height: 100%;
+  display: flex;
+}
+
+.container .center {
+  width: 100%;
+  align-self: center;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.text-container h3 {
+  overflow: hidden;
+  color: #ffffff;
+  font-weight: 200;
+  font-size: 2.5rem;
+}
+
+.text-container h3 span {
+  background-color: #131212;
+  display: inline-block;
+  transform: translateX(-100%);
+}
+
+.text-container h1 {
+  overflow: hidden;
+  color: #ffffff;
+  margin-bottom: 0.75rem;
+  font-size: 7.5rem;
+}
+
+.text-container h1 span {
+  display: inline-block;
+  background-color: #131212;
+  transform: translateY(100%);
+}
+
+.text-container p {
+  line-height: 1.5;
+  color: #ffffff;
+  font-size: 1.5rem;
+  max-width: 600px;
+  overflow: hidden;
+}
+
+.text-container p span {
+  display: inline-block;
+  background-color: #131212;
+  transform: translateY(100%);
+}
+.container .center button {
+  overflow: hidden;
+  opacity: 0;
+  align-self: center;
+  background-color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 2.25rem;
+  width: 0;
+  height: 120px;
+  color: #131212;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  position: relative;
+}
+
+.container .center button span {
+  position: absolute;
+  color: #ffffff !important;
+  opacity: 0;
+  bottom: 75px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.2s ease-in-out;
+}
+
+.container .center button:hover {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+}
+
+.container .center button:hover span {
+  opacity: 1;
+  bottom: -75px;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    margin: 0 auto;
+    max-width: 1200px;
+    height: 100%;
+    display: flex;
+    padding: 0 1rem;
+  }
+
+  .container .center h3 {
+    font-weight: 200;
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+  }
+  .container .center h1 {
+    color: #ffffff;
+    margin-bottom: 0.75rem;
+    font-size: 3rem;
+  }
+
+  .container .center p {
+    line-height: 1.5;
+    color: #ffffff;
+    font-size: 0.75rem;
+    max-width: 450px;
+  }
+
+  .container .center button {
+    margin: 1rem;
+    align-self: center;
+    background-color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.1rem;
+    width: 140px;
+    height: 60px;
+    color: #131212;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+  }
+}

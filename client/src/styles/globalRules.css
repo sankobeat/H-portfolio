@@ -1,0 +1,49 @@
+@import url("https://v1.fontapi.ir/css/SFProDisplay");
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "SF Pro Display", sans-serif;
+}
+
+img {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #ffffff;
+}
+
+ul {
+  list-style: none;
+}
+button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+
+.toggle-dark-mode {
+  color: var(--black-clr);
+  background-color: #ffffff;
+}
+/* COLORS */
+
+:root {
+  --white-text-clr: #ffffff;
+  --black-clr: #131212;
+  --large-width: 1200px;
+}
+
+@media only screen and (max-width: 768px) {
+}
